@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="Lead Charts">
+        <div class="slds-grid slds-wrap">
+            <!-- Lead Status Table and Chart -->
+        
+             <!-- <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                    <lightning-datatable
+                        data={statusTableData}
+                        columns={statusColumns}
+                        key-field="status"
+                        hide-checkbox-column
+                    ></lightning-datatable>
+                </div>-->
+                <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                    <h2>Product And Industry</h2>
+                    <canvas class="combined-chart" style="max-width: 100%;height: 300px;"></canvas>
+                </div>
+               
+                 <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                    <h2>Lead Status</h2>
+                    <canvas class="status-chart" style="max-width: 100%;height: 300px;"></canvas>
+                </div>
+        
+        </div>
+    </lightning-card>
+
+
+    <lightning-card title="Lead Charts">
+        <div class="slds-grid slds-wrap">
+            <!-- Lead Status Table and Chart 
+            <template if:true={showStatusChart}>
+              <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                    <lightning-datatable
+                        data={statusTableData}
+                        columns={statusColumns}
+                        key-field="status"
+                        hide-checkbox-column
+                    ></lightning-datatable>
+                </div>-->
+                <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                    <canvas class="yearly-chart" style="max-width: 100%;height: 300px;"></canvas>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                    <canvas class="duration-chart" style="max-width: 100%;height: 300px;"></canvas>
+                </div>
+            
+        </div>
+    </lightning-card>
+</template>
